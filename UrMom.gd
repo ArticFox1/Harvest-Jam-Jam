@@ -10,6 +10,7 @@ const HalfGravityThreshold: float = 40
 const JumpHoldTime: float = 0.2
 const CoyoteTime: float = 0.1
 const BufferTime: float = 0.05
+const JumpBoost: float = 20
 
 var GroundTimer: float = 0
 var BufferTimer: float = 0
@@ -22,8 +23,15 @@ func Jump(JumpForce: float) -> void:
 	JumpHoldTimer = JumpHoldTime
 	velocity.y = minf(0,velocity.y)
 	velocity.y -= JumpForce
+	velocity.x += signf(velocity.x) * JumpBoost
 	SaveJumpVelocity = velocity.y
 	IsJumpInput = true
+
+func Die() -> void:
+	pass
+
+func HurtboxTriggered(body: Node2D) -> void:
+	Die()
 
 func _physics_process(dt: float) -> void:
 	# Add the gravity.
