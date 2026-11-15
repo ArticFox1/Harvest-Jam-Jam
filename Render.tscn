@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://rqd7lorg71hh"]
+
+[ext_resource type="PackedScene" uid="uid://dt7qc17grwqi3" path="res://Haven-Jam-Jam/Game.tscn" id="1_3atuh"]
+
+[node name="Render" type="Node2D" unique_id=1522850979]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=783956041]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1195468038]
+transparent_bg = true
+handle_input_locally = false
+canvas_item_default_texture_filter = 0
+size = Vector2i(320, 180)
+render_target_update_mode = 4
+
+[node name="Game" parent="SubViewportContainer/SubViewport" unique_id=141473979 instance=ExtResource("1_3atuh")]

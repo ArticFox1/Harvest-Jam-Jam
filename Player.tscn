@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dkq04wril06q6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
+size = Vector2(127, 126.7027)
+
+[node name="Player" type="Node2D" unique_id=1723447365]
+
+[node name="PlayerCharacter" type="CharacterBody2D" parent="." unique_id=1256368674]
+
+[node name="Sprite2D" type="Sprite2D" parent="PlayerCharacter" unique_id=2033088363]
+scale = Vector2(1, 2.3125)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter" unique_id=252369109]
+scale = Vector2(0.125, 0.25)
+shape = SubResource("RectangleShape2D_kpjcp")
