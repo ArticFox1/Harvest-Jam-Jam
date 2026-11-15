@@ -12,9 +12,6 @@ const CoyoteTime: float = 0.1
 const BufferTime: float = 0.05
 const JumpBoost: float = 20
 
-const DeadBody: PackedScene = preload("res://Haven-Jam-Jam/Dead Player.tscn")
-@onready var GameScene = load("res://Haven-Jam-Jam/Game.tscn") as Resource
-
 var GroundTimer: float = 0
 var BufferTimer: float = 0
 var JumpHoldTimer: float = 0
@@ -31,9 +28,9 @@ func Jump(JumpForce: float) -> void:
 	IsJumpInput = true
 
 func Die() -> void:
-	#var NewBody = DeadBody.duplicate().instantiate(PackedScene.GEN_EDIT_STATE_MAIN)
-	#GameScene.add_child(NewBody)
-	#NewBody.global_position = global_position
+	var NewBody = (load("res://Haven-Jam-Jam/Dead Player.tscn") as PackedScene).instantiate()
+	NewBody.reparent((load("res://Haven-Jam-Jam/Game.tscn") as PackedScene).instantiate().get_child(1))
+	NewBody.global_position = global_position
 	global_position = Vector2.ZERO
 
 func HurtboxTriggered(body: Node2D) -> void:
