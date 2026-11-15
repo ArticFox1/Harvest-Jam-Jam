@@ -7,6 +7,7 @@
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=783956041]
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(4, 4)
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1195468038]
 transparent_bg = true
