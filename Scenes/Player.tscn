@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dw3q2mb5s1w2u"]
 
 [ext_resource type="Script" uid="uid://bart62vc6fams" path="res://Haven-Jam-Jam/Scripts/UrMom.gd" id="1_dcn4y"]
-[ext_resource type="SpriteFrames" uid="uid://c87itghqoyelc" path="res://Haven-Jam-Jam/PlayerAnimations.tres" id="2_fwuqr"]
+[ext_resource type="SpriteFrames" uid="uid://c87itghqoyelc" path="res://Haven-Jam-Jam/Assets/PlayerAnimations.tres" id="2_fwuqr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
 size = Vector2(15.9, 31.9)
@@ -16,6 +16,8 @@ script = ExtResource("1_dcn4y")
 
 [node name="Animator" type="AnimatedSprite2D" parent="PlayerCharacter" unique_id=1246692877]
 sprite_frames = ExtResource("2_fwuqr")
+animation = &"Idle"
+frame_progress = 0.98165154
 
 [node name="Hitbox" type="CollisionShape2D" parent="PlayerCharacter" unique_id=252369109]
 shape = SubResource("RectangleShape2D_kpjcp")
@@ -27,9 +29,5 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter/Area2D" unique_id=1388744931]
 shape = SubResource("RectangleShape2D_142tq")
 debug_color = Color(0.7, 0, 0, 0.41960785)
-
-[node name="Camera2D" type="Camera2D" parent="PlayerCharacter" unique_id=2123323337]
-position_smoothing_enabled = true
-position_smoothing_speed = 10.0
 
 [connection signal="body_entered" from="PlayerCharacter/Area2D" to="PlayerCharacter" method="HurtboxTriggered"]

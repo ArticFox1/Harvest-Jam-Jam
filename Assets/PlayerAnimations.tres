@@ -1,0 +1,26 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://c87itghqoyelc"]
+
+[ext_resource type="Texture2D" uid="uid://bwod3eccqxy7w" path="res://Haven-Jam-Jam/Assets/Haven Jam Robit Sprite Sheet.png_0001.png" id="1_6dwbc"]
+[ext_resource type="Texture2D" uid="uid://yvd6gi71oltb" path="res://Haven-Jam-Jam/Assets/Haven Jam Robit Sprite Sheet.png_0002.png" id="2_6dwbc"]
+[ext_resource type="Texture2D" uid="uid://bsvf1ndhrbpbo" path="res://Haven-Jam-Jam/Assets/Haven Jam Robit Sprite Sheet.png_0003.png" id="3_7w0bo"]
+[ext_resource type="Texture2D" uid="uid://lov630gfl0o8" path="res://Haven-Jam-Jam/Assets/Haven Jam Robit Sprite Sheet.png_0004.png" id="4_8kam3"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6dwbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6dwbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7w0bo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8kam3")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}]

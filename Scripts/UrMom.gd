@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var Animator = $Animator
 
 const Speed: float = 90
 const GroundedAccleration: float = 1000
@@ -18,6 +19,10 @@ var JumpHoldTimer: float = 0
 var IsJumpInput: bool = false
 var SaveJumpVelocity: float = 0
 
+var RespawnPoint: Vector2 = Vector2.ZERO
+
+signal Died
+
 func Jump(JumpForce: float) -> void:
 	BufferTimer = 0
 	JumpHoldTimer = JumpHoldTime
@@ -28,12 +33,10 @@ func Jump(JumpForce: float) -> void:
 	IsJumpInput = true
 
 func Die() -> void:
-	var NewBody = (load("res://Haven-Jam-Jam/Dead Player.tscn") as PackedScene).instantiate()
-	NewBody.reparent((load("res://Haven-Jam-Jam/Game.tscn") as PackedScene).instantiate().get_child(1))
-	NewBody.global_position = global_position
-	global_position = Vector2.ZERO
+	Died.emit()
+	global_position = RespawnPoint
 
-func HurtboxTriggered(body: Node2D) -> void:
+func HurtboxTriggered(_body: Node2D) -> void:
 	Die()
 
 func _physics_process(dt: float) -> void:
@@ -87,3 +90,5 @@ func _physics_process(dt: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, Acceleration * dt)
 
 	move_and_slide()
+	
+	Animator.play("Idle")

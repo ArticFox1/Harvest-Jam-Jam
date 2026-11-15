@@ -1,10 +1,16 @@
-[gd_scene format=3 uid="uid://dt7qc17grwqi3"]
+[gd_scene format=3 uid="uid://dbuacj11w2n32"]
 
+[ext_resource type="Script" uid="uid://de3ilhk8ecjd2" path="res://Haven-Jam-Jam/Scripts/Game.gd" id="1_6fjee"]
 [ext_resource type="PackedScene" uid="uid://dw3q2mb5s1w2u" path="res://Haven-Jam-Jam/Scenes/Player.tscn" id="1_oxhst"]
-[ext_resource type="PackedScene" uid="uid://bs1en8twbpask" path="res://Haven-Jam-Jam/Scenes/Level.tscn" id="2_e3n2n"]
+[ext_resource type="PackedScene" uid="uid://cuxjc1ruexbjw" path="res://Haven-Jam-Jam/Scenes/Level.tscn" id="2_e3n2n"]
+[ext_resource type="Script" uid="uid://w57vkj7bdd7v" path="res://Haven-Jam-Jam/Scripts/CameraScript.gd" id="4_c34yj"]
 
 [node name="Game" type="Node2D" unique_id=141473979]
+script = ExtResource("1_6fjee")
+
+[node name="Level" parent="." unique_id=830011619 instance=ExtResource("2_e3n2n")]
 
 [node name="Player" parent="." unique_id=1723447365 instance=ExtResource("1_oxhst")]
 
-[node name="Level" parent="." unique_id=830011619 instance=ExtResource("2_e3n2n")]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=539544017]
+script = ExtResource("4_c34yj")

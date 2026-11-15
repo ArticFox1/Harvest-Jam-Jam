@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://d4kh61stk1ykb"]
+
+[ext_resource type="SpriteFrames" uid="uid://c87itghqoyelc" path="res://Haven-Jam-Jam/Assets/PlayerAnimations.tres" id="1_l2a6w"]
+[ext_resource type="Script" uid="uid://dml5abocmjpdt" path="res://Haven-Jam-Jam/Scripts/PlayerSpawnDeletion.gd" id="1_xhb14"]
+
+[node name="Player Spawn" type="Node2D" unique_id=837734868]
+modulate = Color(1, 1, 1, 0.39215687)
+script = ExtResource("1_xhb14")
+
+[node name="Animator" type="AnimatedSprite2D" parent="." unique_id=2123939909]
+sprite_frames = ExtResource("1_l2a6w")
