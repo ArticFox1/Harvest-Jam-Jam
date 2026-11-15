@@ -16,8 +16,9 @@ script = ExtResource("1_dcn4y")
 
 [node name="Animator" type="AnimatedSprite2D" parent="PlayerCharacter" unique_id=1246692877]
 sprite_frames = ExtResource("2_fwuqr")
-animation = &"Idle"
-frame_progress = 0.98165154
+animation = &"Walking"
+frame = 3
+frame_progress = 0.3472173
 
 [node name="Hitbox" type="CollisionShape2D" parent="PlayerCharacter" unique_id=252369109]
 shape = SubResource("RectangleShape2D_kpjcp")

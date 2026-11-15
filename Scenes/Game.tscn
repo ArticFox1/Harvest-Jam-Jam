@@ -14,3 +14,5 @@ script = ExtResource("1_6fjee")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=539544017]
 script = ExtResource("4_c34yj")
+
+[node name="Fade" type="CanvasModulate" parent="." unique_id=1788724137]

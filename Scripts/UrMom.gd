@@ -35,6 +35,7 @@ func Jump(JumpForce: float) -> void:
 func Die() -> void:
 	Died.emit()
 	global_position = RespawnPoint
+	
 
 func HurtboxTriggered(_body: Node2D) -> void:
 	Die()

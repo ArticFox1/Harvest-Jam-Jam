@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yvd6gi71oltb"
-path="res://.godot/imported/Haven Jam Robit Sprite Sheet.png_0002.png-c514cc2eb351e92e88698d4732597f67.ctex"
+uid="uid://dykq6blthmfpt"
+path="res://.godot/imported/Haven Jam Robit Sprite Sheet Jumping_0001.png-afafb79a115998007286d98e843415d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/Assets/Haven Jam Robit Sprite Sheet.png_0002.png"
-dest_files=["res://.godot/imported/Haven Jam Robit Sprite Sheet.png_0002.png-c514cc2eb351e92e88698d4732597f67.ctex"]
+source_file="res://Haven-Jam-Jam/Assets/Animations/Jumping/Haven Jam Robit Sprite Sheet Jumping_0001.png"
+dest_files=["res://.godot/imported/Haven Jam Robit Sprite Sheet Jumping_0001.png-afafb79a115998007286d98e843415d0.ctex"]
 
 [params]
 
