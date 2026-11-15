@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://dkq04wril06q6"]
+[gd_scene format=3 uid="uid://dw3q2mb5s1w2u"]
 
 [ext_resource type="Script" uid="uid://bart62vc6fams" path="res://Haven-Jam-Jam/UrMom.gd" id="1_8dp57"]
 [ext_resource type="Texture2D" uid="uid://dlxwrsh86ya35" path="res://Haven-Jam-Jam/FakeCelesteCharacter.png" id="2_iflqu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
-size = Vector2(127, 126.7027)
+size = Vector2(15.9, 31.9)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_142tq"]
 animations = [{
@@ -17,16 +17,24 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
+size = Vector2(12, 28)
+
 [node name="Player" type="Node2D" unique_id=1723447365]
 
 [node name="PlayerCharacter" type="CharacterBody2D" parent="." unique_id=1256368674]
 script = ExtResource("1_8dp57")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter" unique_id=252369109]
-scale = Vector2(0.125, 0.25)
+[node name="Hitbox" type="CollisionShape2D" parent="PlayerCharacter" unique_id=252369109]
 shape = SubResource("RectangleShape2D_kpjcp")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PlayerCharacter" unique_id=1246692877]
+[node name="Animator" type="AnimatedSprite2D" parent="PlayerCharacter" unique_id=1246692877]
 position = Vector2(0, 16)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_142tq")
+
+[node name="Area2D" type="Area2D" parent="PlayerCharacter" unique_id=1707149834]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter/Area2D" unique_id=1388744931]
+shape = SubResource("RectangleShape2D_142tq")
+debug_color = Color(0.7, 0, 0, 0.41960785)

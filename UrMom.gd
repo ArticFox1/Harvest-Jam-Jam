@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
 
-const Speed: float = 160
-const GroundedAccleration: float = 1200
+const Speed: float = 90
+const GroundedAccleration: float = 1000
 const GroundedExceedAcceleration: float = 600
 
-const JumpHeight: float = 4
+const JumpHeight: float = 12
 const HalfGravityThreshold: float = 40
 const JumpHoldTime: float = 0.2
 const CoyoteTime: float = 0.1
@@ -15,11 +15,14 @@ var GroundTimer: float = 0
 var BufferTimer: float = 0
 var JumpHoldTimer: float = 0
 var IsJumpInput: bool = false
+var SaveJumpVelocity: float = 0
 
 func Jump(JumpForce: float) -> void:
 	BufferTimer = 0
+	JumpHoldTimer = JumpHoldTime
 	velocity.y = minf(0,velocity.y)
 	velocity.y -= JumpForce
+	SaveJumpVelocity = velocity.y
 	IsJumpInput = true
 
 func _physics_process(dt: float) -> void:
@@ -27,6 +30,7 @@ func _physics_process(dt: float) -> void:
 	var Gravity: float = get_gravity().y
 	var LocalGravity: float = Gravity
 	var JumpForce: float = sqrt(2*Gravity*JumpHeight)
+	
 	var Grounded: bool = is_on_floor()
 	
 	var JumpPressed: bool = Input.is_action_just_pressed("Jump")
@@ -34,17 +38,18 @@ func _physics_process(dt: float) -> void:
 	var JumpReleased: bool = Input.is_action_just_released("Jump")
 	
 	BufferTimer = move_toward(BufferTimer,0,dt)
+	JumpHoldTimer = move_toward(JumpHoldTimer,0,dt)
 	if Grounded:
 		GroundTimer = 0
 	else:
 		GroundTimer = move_toward(GroundTimer,CoyoteTime,dt)
-		if absf(velocity.y) < HalfGravityThreshold:
+		if absf(velocity.y) < HalfGravityThreshold and IsJumpInput:
 			LocalGravity *= 0.5
 		velocity.y += LocalGravity * dt
 
 	# Handle jump.
 	if JumpHeld and JumpHoldTimer != 0 and IsJumpInput:
-		Jump(JumpForce)
+		velocity.y = SaveJumpVelocity
 	
 	if (JumpPressed or BufferTimer != 0) and GroundTimer < CoyoteTime:
 		Jump(JumpForce)
