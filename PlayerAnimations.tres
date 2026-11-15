@@ -1,12 +1,15 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://c87itghqoyelc"]
 
-[ext_resource type="Texture2D" uid="uid://dlxwrsh86ya35" path="res://Haven-Jam-Jam/FakeCelesteCharacter.png" id="1_dewvr"]
+[ext_resource type="Texture2D" uid="uid://c53jcu134i33m" path="res://Haven-Jam-Jam/Assets/Haven Jam Robit.png" id="1_dewvr"]
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_dewvr")
+}, {
+"duration": 1.0,
+"texture": null
 }],
 "loop": 1,
 "name": &"default",

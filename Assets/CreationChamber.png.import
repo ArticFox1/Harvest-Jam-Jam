@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c53jcu134i33m"
-path="res://.godot/imported/Haven Jam Robit.png-02efd067c4fb64482484dbd9600f4443.ctex"
+uid="uid://cbgougwk34ppc"
+path="res://.godot/imported/CreationChamber.png-fef1e799f6c9e881d06a16331cdf5fcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/Haven Jam Robit.png"
-dest_files=["res://.godot/imported/Haven Jam Robit.png-02efd067c4fb64482484dbd9600f4443.ctex"]
+source_file="res://Haven-Jam-Jam/Assets/CreationChamber.png"
+dest_files=["res://.godot/imported/CreationChamber.png-fef1e799f6c9e881d06a16331cdf5fcc.ctex"]
 
 [params]
 

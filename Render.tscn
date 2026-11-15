@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://rqd7lorg71hh"]
 
-[ext_resource type="PackedScene" uid="uid://dt7qc17grwqi3" path="res://Haven-Jam-Jam/Game.tscn" id="1_3atuh"]
+[ext_resource type="PackedScene" uid="uid://dt7qc17grwqi3" path="res://Haven-Jam-Jam/Scenes/Game.tscn" id="1_3atuh"]
 
 [node name="Render" type="Node2D" unique_id=1522850979]
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=783956041]
+texture_filter = 1
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(4, 4)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlxwrsh86ya35"
-path="res://.godot/imported/FakeCelesteCharacter.png-342c8f7e15308605985b4f3162fe4f84.ctex"
+uid="uid://do8ywea6qmnfe"
+path="res://.godot/imported/Robot Tilemap.png-3332f2d5849ad489ab98a4b8c63d0539.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/FakeCelesteCharacter.png"
-dest_files=["res://.godot/imported/FakeCelesteCharacter.png-342c8f7e15308605985b4f3162fe4f84.ctex"]
+source_file="res://Haven-Jam-Jam/Assets/Robot Tilemap.png"
+dest_files=["res://.godot/imported/Robot Tilemap.png-3332f2d5849ad489ab98a4b8c63d0539.ctex"]
 
 [params]
 

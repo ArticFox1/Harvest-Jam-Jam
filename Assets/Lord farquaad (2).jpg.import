@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1wctvv8wivqy"
-path="res://.godot/imported/icon.svg-fab80fa0a98410e0156bbe5fcba4977a.ctex"
+uid="uid://bpkg6m525u0t1"
+path="res://.godot/imported/Lord farquaad (2).jpg-0b5abaa2bf55763a0def16e4496eb9a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-fab80fa0a98410e0156bbe5fcba4977a.ctex"]
+source_file="res://Haven-Jam-Jam/Assets/Lord farquaad (2).jpg"
+dest_files=["res://.godot/imported/Lord farquaad (2).jpg-0b5abaa2bf55763a0def16e4496eb9a7.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

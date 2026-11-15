@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cnr314ghlk3eh"]
+
+[ext_resource type="SpriteFrames" uid="uid://c87itghqoyelc" path="res://Haven-Jam-Jam/PlayerAnimations.tres" id="1_vurvk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
+size = Vector2(16, 32)
+
+[node name="Dead Player" type="Node2D" unique_id=2026784183]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=569096750]
+position = Vector2(0, 16)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_vurvk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=92708291]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1243996005]
+shape = SubResource("RectangleShape2D_142tq")

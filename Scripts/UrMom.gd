@@ -12,6 +12,9 @@ const CoyoteTime: float = 0.1
 const BufferTime: float = 0.05
 const JumpBoost: float = 20
 
+const DeadBody: PackedScene = preload("res://Haven-Jam-Jam/Dead Player.tscn")
+@onready var GameScene = load("res://Haven-Jam-Jam/Game.tscn") as Resource
+
 var GroundTimer: float = 0
 var BufferTimer: float = 0
 var JumpHoldTimer: float = 0
@@ -28,12 +31,19 @@ func Jump(JumpForce: float) -> void:
 	IsJumpInput = true
 
 func Die() -> void:
-	pass
+	#var NewBody = DeadBody.duplicate().instantiate(PackedScene.GEN_EDIT_STATE_MAIN)
+	#GameScene.add_child(NewBody)
+	#NewBody.global_position = global_position
+	global_position = Vector2.ZERO
 
 func HurtboxTriggered(body: Node2D) -> void:
 	Die()
 
 func _physics_process(dt: float) -> void:
+	
+	if Input.is_action_just_pressed("SelfDestruct"):
+		Die()
+	
 	# Add the gravity.
 	var Gravity: float = get_gravity().y
 	var LocalGravity: float = Gravity
@@ -54,7 +64,7 @@ func _physics_process(dt: float) -> void:
 		if absf(velocity.y) < HalfGravityThreshold and IsJumpInput:
 			LocalGravity *= 0.5
 		velocity.y += LocalGravity * dt
-
+	
 	# Handle jump.
 	if JumpHeld and JumpHoldTimer != 0 and IsJumpInput:
 		velocity.y = SaveJumpVelocity
