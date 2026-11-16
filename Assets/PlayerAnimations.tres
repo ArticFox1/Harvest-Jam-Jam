@@ -1,20 +1,29 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://c87itghqoyelc"]
 
-[ext_resource type="Texture2D" uid="uid://bwod3eccqxy7w" path="res://Haven-Jam-Jam/Assets/Animations/Idle/Haven Jam Robit Sprite Sheet.png_0001.png" id="1_u1cim"]
-[ext_resource type="Texture2D" uid="uid://yvd6gi71oltb" path="res://Haven-Jam-Jam/Assets/Animations/Idle/Haven Jam Robit Sprite Sheet.png_0002.png" id="2_ts7rr"]
-[ext_resource type="Texture2D" uid="uid://bsvf1ndhrbpbo" path="res://Haven-Jam-Jam/Assets/Animations/Idle/Haven Jam Robit Sprite Sheet.png_0003.png" id="3_5ww6t"]
-[ext_resource type="Texture2D" uid="uid://lov630gfl0o8" path="res://Haven-Jam-Jam/Assets/Animations/Idle/Haven Jam Robit Sprite Sheet.png_0004.png" id="4_67wei"]
-[ext_resource type="Texture2D" uid="uid://lt03prj5ql4v" path="res://Haven-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0001.png" id="5_coq16"]
-[ext_resource type="Texture2D" uid="uid://d2n7gjfdjrl2l" path="res://Haven-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0002.png" id="6_ma56d"]
-[ext_resource type="Texture2D" uid="uid://i6nx4xiy31el" path="res://Haven-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0003.png" id="7_dqu08"]
-[ext_resource type="Texture2D" uid="uid://diolcf22gxf0n" path="res://Haven-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0004.png" id="8_q8h2c"]
+[ext_resource type="Texture2D" uid="uid://dc8ly0sjjrsw4" path="res://Haven-Jam-Jam/Assets/Animations/Haven Jam Robit Exploded.png" id="1_ej847"]
+[ext_resource type="Texture2D" uid="uid://bwod3eccqxy7w" path="res://Haven-Jam-Jam/Assets/Animations/Idle/Haven Jam Robit Sprite Sheet.png_0001.png" id="2_ts7rr"]
+[ext_resource type="Texture2D" uid="uid://yvd6gi71oltb" path="res://Haven-Jam-Jam/Assets/Animations/Idle/Haven Jam Robit Sprite Sheet.png_0002.png" id="3_5ww6t"]
+[ext_resource type="Texture2D" uid="uid://bsvf1ndhrbpbo" path="res://Haven-Jam-Jam/Assets/Animations/Idle/Haven Jam Robit Sprite Sheet.png_0003.png" id="4_67wei"]
+[ext_resource type="Texture2D" uid="uid://lov630gfl0o8" path="res://Haven-Jam-Jam/Assets/Animations/Idle/Haven Jam Robit Sprite Sheet.png_0004.png" id="5_coq16"]
+[ext_resource type="Texture2D" uid="uid://dykq6blthmfpt" path="res://Haven-Jam-Jam/Assets/Animations/Jumping/Haven Jam Robit Sprite Sheet Jumping_0001.png" id="6_coq16"]
+[ext_resource type="Texture2D" uid="uid://lt03prj5ql4v" path="res://Haven-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0001.png" id="6_ma56d"]
+[ext_resource type="Texture2D" uid="uid://d2n7gjfdjrl2l" path="res://Haven-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0002.png" id="7_dqu08"]
+[ext_resource type="Texture2D" uid="uid://hnek6sgl26km" path="res://Haven-Jam-Jam/Assets/Animations/Jumping/Haven Jam Robit Sprite Sheet Jumping_0002.png" id="7_ma56d"]
+[ext_resource type="Texture2D" uid="uid://cldtemakishfc" path="res://Haven-Jam-Jam/Assets/Animations/Jumping/Haven Jam Robit Sprite Sheet Jumping_0003.png" id="8_dqu08"]
+[ext_resource type="Texture2D" uid="uid://i6nx4xiy31el" path="res://Haven-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0003.png" id="8_q8h2c"]
+[ext_resource type="Texture2D" uid="uid://diolcf22gxf0n" path="res://Haven-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0004.png" id="9_ijoat"]
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_u1cim")
+"texture": ExtResource("1_ej847")
+}],
+"loop": 1,
+"name": &"Dead",
+"speed": 5.0
 }, {
+"frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_ts7rr")
 }, {
@@ -23,6 +32,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("4_67wei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_coq16")
 }],
 "loop": 1,
 "name": &"Idle",
@@ -30,8 +42,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_coq16")
+"texture": ExtResource("6_coq16")
 }, {
+"duration": 1.0,
+"texture": ExtResource("7_ma56d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_dqu08")
+}],
+"loop": 1,
+"name": &"Jumping",
+"speed": 5.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": ExtResource("6_ma56d")
 }, {
@@ -40,6 +63,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("8_q8h2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ijoat")
 }],
 "loop": 1,
 "name": &"Walking",

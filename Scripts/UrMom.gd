@@ -1,6 +1,13 @@
 extends CharacterBody2D
 
 @onready var Animator = $Animator
+@onready var LandSound = $Land
+@onready var WalkSound = $Walk
+@onready var JumpSound = $Jump
+@onready var RespawnSound = $Jump
+@onready var DeathSound = $Death
+@onready var Death1Sound = $Death1
+@onready var Background = $Background
 
 const Speed: float = 90
 const GroundedAccleration: float = 1000
@@ -23,6 +30,10 @@ var RespawnPoint: Vector2 = Vector2.ZERO
 
 signal Died
 
+func _ready() -> void:
+	WalkSound.finished.connect(WalkSoundFinished)
+	Background.finished.connect(BackgroundSoundFinished)
+
 func Jump(JumpForce: float) -> void:
 	BufferTimer = 0
 	JumpHoldTimer = JumpHoldTime
@@ -31,14 +42,29 @@ func Jump(JumpForce: float) -> void:
 	velocity.x += signf(velocity.x) * JumpBoost
 	SaveJumpVelocity = velocity.y
 	IsJumpInput = true
+	JumpSound.pitch_scale = randfn(1,0.1)
+	JumpSound.play()
 
 func Die() -> void:
 	Died.emit()
 	global_position = RespawnPoint
+	if randf() < 0.5:
+		DeathSound.pitch_scale = randfn(1,0.1)
+		DeathSound.play()
+	else:
+		Death1Sound.pitch_scale = randfn(1,0.1)
+		Death1Sound.play()
+	RespawnSound.play()
 	
 
 func HurtboxTriggered(_body: Node2D) -> void:
 	Die()
+	
+func WalkSoundFinished() -> void:
+	WalkSound.play()
+
+func BackgroundSoundFinished() -> void:
+	Background.play()
 
 func _physics_process(dt: float) -> void:
 	
@@ -59,6 +85,8 @@ func _physics_process(dt: float) -> void:
 	BufferTimer = move_toward(BufferTimer,0,dt)
 	JumpHoldTimer = move_toward(JumpHoldTimer,0,dt)
 	if Grounded:
+		if GroundTimer > 0:
+			LandSound.play()
 		GroundTimer = 0
 	else:
 		GroundTimer = move_toward(GroundTimer,CoyoteTime,dt)
@@ -93,3 +121,8 @@ func _physics_process(dt: float) -> void:
 	move_and_slide()
 	
 	Animator.play("Idle")
+	if direction:
+		Animator.flip_h = (direction-1)*-0.5
+		Animator.play("Walking")
+	if velocity.y < 0:
+		Animator.play("Jumping")
