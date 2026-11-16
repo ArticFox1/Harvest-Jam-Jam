@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://dw3q2mb5s1w2u" path="res://Haven-Jam-Jam/Scenes/Player.tscn" id="1_oxhst"]
 [ext_resource type="PackedScene" uid="uid://doa2qr2217kab" path="res://Haven-Jam-Jam/Scenes/Level.tscn" id="2_e3n2n"]
 [ext_resource type="Script" uid="uid://w57vkj7bdd7v" path="res://Haven-Jam-Jam/Scripts/CameraScript.gd" id="4_c34yj"]
+[ext_resource type="Texture2D" uid="uid://n5c56ig17m36" path="res://Haven-Jam-Jam/Assets/TitleScreen.png" id="5_keihp"]
+[ext_resource type="Script" uid="uid://cqd3pi1cayc1c" path="res://Haven-Jam-Jam/Scenes/Credits hide.gd" id="6_p6tnp"]
 
 [node name="Game" type="Node2D" unique_id=141473979]
 script = ExtResource("1_6fjee")
@@ -14,6 +16,14 @@ script = ExtResource("1_6fjee")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=539544017]
 script = ExtResource("4_c34yj")
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D" unique_id=103686206]
+offset_left = -160.0
+offset_top = -90.0
+offset_right = 160.0
+offset_bottom = 90.0
+texture = ExtResource("5_keihp")
+script = ExtResource("6_p6tnp")
 
 [node name="Fade" type="CanvasModulate" parent="." unique_id=1788724137]
 
