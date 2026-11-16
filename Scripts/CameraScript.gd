@@ -9,17 +9,18 @@ func ClampPosition(In: Vector2) -> Vector2:
 		&"Level 1":
 			
 			Res.x = maxf(Res.x,-16)
-			if Res.x < 1500:
-				Res.x = minf(Res.x,1376)
+			print(Res)
+			#if Res.x < 1500:
+			#	Res.x = minf(Res.x,1376)
+			#	print("Not hter yet")
 			Res.x = minf(Res.x,1472)
 			if Res.x < 96:
 				Res.y = maxf(Res.y,-80)
 			if Res.x < 1472:
 				Res.y = maxf(Res.y,-166)
-				print("Not hter yet")
-			if Res.x == 1376.0:
-				Res.y = maxf(Res.y,-230.0)
-			print(Res)
+				
+			Res.y = maxf(Res.y,-230.0)
+			
 	return Res
 
 func _process(dt: float) -> void:

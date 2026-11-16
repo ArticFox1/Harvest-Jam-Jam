@@ -451,7 +451,7 @@ tile_map_data = PackedByteArray("AAD+/wIAAQAAAAAAAAD//wIAAQAAAAAAAAAAAAIAAQAAAAA
 tile_set = SubResource("TileSet_2nifc")
 
 [node name="Player Spawn" parent="." unique_id=837734868 instance=ExtResource("4_pbmxi")]
-position = Vector2(1463, -216)
+position = Vector2(-72, 15)
 
 [node name="Level End" parent="." unique_id=924171489 instance=ExtResource("5_cllbu")]
 position = Vector2(1615, -213)
