@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://cuxjc1ruexbjw"]
 
 [ext_resource type="TileSet" uid="uid://bng27bapvx87j" path="res://Haven-Jam-Jam/Assets/GameTileSet.tres" id="1_dmncj"]
-[ext_resource type="Texture2D" uid="uid://bpkg6m525u0t1" path="res://Haven-Jam-Jam/Lord farquaad (2).jpg" id="2_cllbu"]
-[ext_resource type="Texture2D" uid="uid://bp10hkn45sswo" path="res://Haven-Jam-Jam/Assets/Robot Tilemap.png" id="3_ourj8"]
+[ext_resource type="Texture2D" uid="uid://bb67ocjt0tpy8" path="res://Haven-Jam-Jam/Lord farquaad (2).jpg" id="2_cllbu"]
+[ext_resource type="Texture2D" uid="uid://4qxd7pc4llat" path="res://Haven-Jam-Jam/Assets/Robot Tilemap.png" id="3_ourj8"]
 [ext_resource type="PackedScene" uid="uid://d4kh61stk1ykb" path="res://Haven-Jam-Jam/Scenes/Player Spawn.tscn" id="4_pbmxi"]
 [ext_resource type="PackedScene" uid="uid://dpeyqmmx23d8" path="res://Haven-Jam-Jam/Scenes/Level End.tscn" id="5_cllbu"]
 
@@ -451,7 +451,7 @@ tile_map_data = PackedByteArray("AAD+/wIAAQAAAAAAAAD//wIAAQAAAAAAAAAAAAIAAQAAAAA
 tile_set = SubResource("TileSet_2nifc")
 
 [node name="Player Spawn" parent="." unique_id=837734868 instance=ExtResource("4_pbmxi")]
-position = Vector2(-73, 15)
+position = Vector2(1463, -216)
 
 [node name="Level End" parent="." unique_id=924171489 instance=ExtResource("5_cllbu")]
 position = Vector2(1615, -213)
