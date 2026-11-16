@@ -120,9 +120,10 @@ func _physics_process(dt: float) -> void:
 
 	move_and_slide()
 	
-	Animator.play("Idle")
-	if direction:
-		Animator.flip_h = (direction-1)*-0.5
-		Animator.play("Walking")
 	if velocity.y < 0:
 		Animator.play("Jumping")
+	elif direction:
+		Animator.flip_h = (direction-1)*-0.5
+		Animator.play("Walking")
+	else:
+		Animator.play("Idle")
