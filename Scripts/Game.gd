@@ -31,18 +31,18 @@ func DeathSignal() -> void:
 func SetupLevel(Name: StringName) -> void:
 	if not Levels[Name]:
 		print("Not a valid level name")
-	if get_node("Level/"+LevelName+"/Level End"):
+	if has_node("Level/"+LevelName+"/Level End"):
 		get_node("Level/"+LevelName+"/Level End").EndReached.disconnect(EndLevel)
 	LevelName = Name
 	QueueFreeChildren(LevelContainer)
 	QueueFreeChildren(BodyContainer)
 	var NewLevel = Levels[Name].instantiate()
 	LevelContainer.add_child(NewLevel)
-	if get_node("Level/"+LevelName+"/Player Spawn"):
+	if has_node("Level/"+LevelName+"/Player Spawn"):
 		Player.global_position = get_node("Level/"+LevelName+"/Player Spawn").global_position
 		Player.RespawnPoint = Player.global_position
 		Camera.global_position = Player.global_position
-	if get_node("Level/"+LevelName+"/Level End"):
+	if has_node("Level/"+LevelName+"/Level End"):
 		get_node("Level/"+LevelName+"/Level End").EndReached.connect(EndLevel)
 
 func _ready() -> void:
