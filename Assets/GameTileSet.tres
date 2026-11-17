@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" format=3 uid="uid://bng27bapvx87j"]
 
-[ext_resource type="Texture2D" uid="uid://4qxd7pc4llat" path="res://Haven-Jam-Jam/Assets/Robot Tilemap.png" id="1_yklxr"]
+[ext_resource type="Texture2D" uid="uid://4qxd7pc4llat" path="res://Harvest-Jam-Jam/Assets/Robot Tilemap.png" id="1_yklxr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qvvao"]
 texture = ExtResource("1_yklxr")

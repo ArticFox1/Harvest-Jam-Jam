@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnpgtkddy0h03"
-path="res://.godot/imported/Lord farquaad.jpg-a215734c9cd4468b1f5f3bc773b59ff5.ctex"
+path="res://.godot/imported/Lord farquaad.jpg-ce6426080995e5fd9424318a9d902d8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/Assets/Lord farquaad.jpg"
-dest_files=["res://.godot/imported/Lord farquaad.jpg-a215734c9cd4468b1f5f3bc773b59ff5.ctex"]
+source_file="res://Harvest-Jam-Jam/Assets/Lord farquaad.jpg"
+dest_files=["res://.godot/imported/Lord farquaad.jpg-ce6426080995e5fd9424318a9d902d8a.ctex"]
 
 [params]
 

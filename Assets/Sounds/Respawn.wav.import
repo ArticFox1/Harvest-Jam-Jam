@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ds46g68vmt00v"
-path="res://.godot/imported/Respawn.wav-33414c8762d9801f0c24982a0c223cec.sample"
+path="res://.godot/imported/Respawn.wav-b4ccf3e2ed1aa660e3abccf076ab92f2.sample"
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/Assets/Sounds/Respawn.wav"
-dest_files=["res://.godot/imported/Respawn.wav-33414c8762d9801f0c24982a0c223cec.sample"]
+source_file="res://Harvest-Jam-Jam/Assets/Sounds/Respawn.wav"
+dest_files=["res://.godot/imported/Respawn.wav-b4ccf3e2ed1aa660e3abccf076ab92f2.sample"]
 
 [params]
 

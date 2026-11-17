@@ -1,15 +1,15 @@
 extends Node2D
 
-const DeadBody: PackedScene = preload("res://Haven-Jam-Jam/Scenes/Dead Player.tscn") as PackedScene
+const DeadBody: PackedScene = preload("res://Harvest-Jam-Jam/Scenes/Dead Player.tscn") as PackedScene
 @onready var Player: Node2D = get_node("Player/PlayerCharacter") as Node2D
 @onready var Camera: Camera2D = get_node("Camera2D")
 @onready var LevelContainer: Node2D = get_node("Level")
 @onready var BodyContainer: Node2D = get_node("DeadBodies")
 
 var Levels := {
-	&"Level 1": preload("res://Haven-Jam-Jam/Scenes/Levels/Level1.tscn") as PackedScene,
-	&"Level 2": preload("res://Haven-Jam-Jam/Scenes/Levels/Level2.tscn") as PackedScene,
-	&"Level End": preload("res://Haven-Jam-Jam/Scenes/Levels/LevelEnd.tscn") as PackedScene,
+	&"Level 1": preload("res://Harvest-Jam-Jam/Scenes/Levels/Level1.tscn") as PackedScene,
+	&"Level 2": preload("res://Harvest-Jam-Jam/Scenes/Levels/Level2.tscn") as PackedScene,
+	&"Level End": preload("res://Harvest-Jam-Jam/Scenes/Levels/LevelEnd.tscn") as PackedScene,
 }
 
 var LevelName: StringName

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dpeyqmmx23d8"]
 
-[ext_resource type="Script" uid="uid://uba3ddh5dg8i" path="res://Haven-Jam-Jam/Scripts/LevelConnection.gd" id="1_q3mn8"]
+[ext_resource type="Script" uid="uid://uba3ddh5dg8i" path="res://Harvest-Jam-Jam/Scripts/LevelConnection.gd" id="1_q3mn8"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
 

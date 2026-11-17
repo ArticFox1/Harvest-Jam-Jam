@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cu51xio5l1xyn"]
 
-[ext_resource type="SpriteFrames" uid="uid://c87itghqoyelc" path="res://Haven-Jam-Jam/Assets/PlayerAnimations.tres" id="1_qlq38"]
-[ext_resource type="Script" uid="uid://b1qoswa5458s6" path="res://Haven-Jam-Jam/Scripts/DeadAnimator.gd" id="2_q4qp7"]
+[ext_resource type="SpriteFrames" uid="uid://c87itghqoyelc" path="res://Harvest-Jam-Jam/Assets/PlayerAnimations.tres" id="1_qlq38"]
+[ext_resource type="Script" uid="uid://b1qoswa5458s6" path="res://Harvest-Jam-Jam/Scripts/DeadAnimator.gd" id="2_q4qp7"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
 size = Vector2(16, 32)

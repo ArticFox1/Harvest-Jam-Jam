@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://conv7i0j3ie34"
-path="res://.godot/imported/Haven Jam Robit Sprite Sheet Walking.png_0002.png-3b6e4ca1bc5fb2457a3c3249d133903a.ctex"
+path="res://.godot/imported/Haven Jam Robit Sprite Sheet Walking.png_0002.png-92c9b3390602369c6613c511fac5067a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0002.png"
-dest_files=["res://.godot/imported/Haven Jam Robit Sprite Sheet Walking.png_0002.png-3b6e4ca1bc5fb2457a3c3249d133903a.ctex"]
+source_file="res://Harvest-Jam-Jam/Assets/Animations/Walking/Haven Jam Robit Sprite Sheet Walking.png_0002.png"
+dest_files=["res://.godot/imported/Haven Jam Robit Sprite Sheet Walking.png_0002.png-92c9b3390602369c6613c511fac5067a.ctex"]
 
 [params]
 

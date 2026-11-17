@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by3q7kkkfq0xj"
-path="res://.godot/imported/FakeCelesteCharacter.png-754121f16739a5a3cb1861262c1206e2.ctex"
+path="res://.godot/imported/FakeCelesteCharacter.png-de1f005b52b9bc431e3d8141f9c627fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/Assets/FakeCelesteCharacter.png"
-dest_files=["res://.godot/imported/FakeCelesteCharacter.png-754121f16739a5a3cb1861262c1206e2.ctex"]
+source_file="res://Harvest-Jam-Jam/Assets/FakeCelesteCharacter.png"
+dest_files=["res://.godot/imported/FakeCelesteCharacter.png-de1f005b52b9bc431e3d8141f9c627fe.ctex"]
 
 [params]
 

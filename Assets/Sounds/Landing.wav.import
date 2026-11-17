@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cwbqgd11bdrid"
-path="res://.godot/imported/Landing.wav-542f0ea1b6af4f59dc6009d74de870fa.sample"
+path="res://.godot/imported/Landing.wav-7969ad36168d585e225c1ee2db085f40.sample"
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/Assets/Sounds/Landing.wav"
-dest_files=["res://.godot/imported/Landing.wav-542f0ea1b6af4f59dc6009d74de870fa.sample"]
+source_file="res://Harvest-Jam-Jam/Assets/Sounds/Landing.wav"
+dest_files=["res://.godot/imported/Landing.wav-7969ad36168d585e225c1ee2db085f40.sample"]
 
 [params]
 

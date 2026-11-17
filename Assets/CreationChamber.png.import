@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwbddaxx8abb"
-path="res://.godot/imported/CreationChamber.png-fef1e799f6c9e881d06a16331cdf5fcc.ctex"
+path="res://.godot/imported/CreationChamber.png-e0f12d36eb647787b1c6d760cd69abbd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/Assets/CreationChamber.png"
-dest_files=["res://.godot/imported/CreationChamber.png-fef1e799f6c9e881d06a16331cdf5fcc.ctex"]
+source_file="res://Harvest-Jam-Jam/Assets/CreationChamber.png"
+dest_files=["res://.godot/imported/CreationChamber.png-e0f12d36eb647787b1c6d760cd69abbd.ctex"]
 
 [params]
 

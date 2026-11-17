@@ -1,9 +1,10 @@
 [gd_scene format=4 uid="uid://68spvgcn52mv"]
 
-[ext_resource type="Texture2D" uid="uid://bpkg6m525u0t1" path="res://Haven-Jam-Jam/Lord farquaad (2).jpg" id="1_qduqc"]
-[ext_resource type="Texture2D" uid="uid://bp10hkn45sswo" path="res://Haven-Jam-Jam/Assets/Robot Tilemap.png" id="2_vxe1k"]
-[ext_resource type="PackedScene" uid="uid://d4kh61stk1ykb" path="res://Haven-Jam-Jam/Scenes/Player Spawn.tscn" id="3_n4aiy"]
-[ext_resource type="PackedScene" uid="uid://dpeyqmmx23d8" path="res://Haven-Jam-Jam/Scenes/Level End.tscn" id="4_7cxs1"]
+[ext_resource type="Texture2D" uid="uid://bb67ocjt0tpy8" path="res://Harvest-Jam-Jam/Lord farquaad (2).jpg" id="1_qduqc"]
+[ext_resource type="Texture2D" uid="uid://4qxd7pc4llat" path="res://Harvest-Jam-Jam/Assets/Robot Tilemap.png" id="2_vxe1k"]
+[ext_resource type="PackedScene" uid="uid://d4kh61stk1ykb" path="res://Harvest-Jam-Jam/Scenes/Player Spawn.tscn" id="3_n4aiy"]
+[ext_resource type="PackedScene" uid="uid://dpeyqmmx23d8" path="res://Harvest-Jam-Jam/Scenes/Level End.tscn" id="4_7cxs1"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_goo6k"]
 texture = ExtResource("1_qduqc")

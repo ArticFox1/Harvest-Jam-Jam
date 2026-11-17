@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://coxapns3aq86f"
-path="res://.godot/imported/Death2.wav-9f46e041a072b95cb82fca0be4363d4c.sample"
+path="res://.godot/imported/Death2.wav-f55a4c9abb609ad3437493e3e6b684ad.sample"
 
 [deps]
 
-source_file="res://Haven-Jam-Jam/Assets/Sounds/Death2.wav"
-dest_files=["res://.godot/imported/Death2.wav-9f46e041a072b95cb82fca0be4363d4c.sample"]
+source_file="res://Harvest-Jam-Jam/Assets/Sounds/Death2.wav"
+dest_files=["res://.godot/imported/Death2.wav-f55a4c9abb609ad3437493e3e6b684ad.sample"]
 
 [params]
 

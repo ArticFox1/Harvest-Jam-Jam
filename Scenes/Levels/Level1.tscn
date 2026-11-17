@@ -1,10 +1,10 @@
 [gd_scene format=4 uid="uid://cuxjc1ruexbjw"]
 
-[ext_resource type="TileSet" uid="uid://bng27bapvx87j" path="res://Haven-Jam-Jam/Assets/GameTileSet.tres" id="1_dmncj"]
-[ext_resource type="Texture2D" uid="uid://bb67ocjt0tpy8" path="res://Haven-Jam-Jam/Lord farquaad (2).jpg" id="2_cllbu"]
-[ext_resource type="Texture2D" uid="uid://4qxd7pc4llat" path="res://Haven-Jam-Jam/Assets/Robot Tilemap.png" id="3_ourj8"]
-[ext_resource type="PackedScene" uid="uid://d4kh61stk1ykb" path="res://Haven-Jam-Jam/Scenes/Player Spawn.tscn" id="4_pbmxi"]
-[ext_resource type="PackedScene" uid="uid://dpeyqmmx23d8" path="res://Haven-Jam-Jam/Scenes/Level End.tscn" id="5_cllbu"]
+[ext_resource type="TileSet" uid="uid://bng27bapvx87j" path="res://Harvest-Jam-Jam/Assets/GameTileSet.tres" id="1_dmncj"]
+[ext_resource type="Texture2D" uid="uid://bb67ocjt0tpy8" path="res://Harvest-Jam-Jam/Lord farquaad (2).jpg" id="2_cllbu"]
+[ext_resource type="Texture2D" uid="uid://4qxd7pc4llat" path="res://Harvest-Jam-Jam/Assets/Robot Tilemap.png" id="3_ourj8"]
+[ext_resource type="PackedScene" uid="uid://d4kh61stk1ykb" path="res://Harvest-Jam-Jam/Scenes/Player Spawn.tscn" id="4_pbmxi"]
+[ext_resource type="PackedScene" uid="uid://dpeyqmmx23d8" path="res://Harvest-Jam-Jam/Scenes/Level End.tscn" id="5_cllbu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ourj8"]
 texture = ExtResource("2_cllbu")
