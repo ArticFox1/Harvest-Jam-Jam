@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://d4kh61stk1ykb" path="res://Harvest-Jam-Jam/Scenes/Player Spawn.tscn" id="4_fa77j"]
 [ext_resource type="PackedScene" uid="uid://dpeyqmmx23d8" path="res://Harvest-Jam-Jam/Scenes/Level End.tscn" id="5_fh8j0"]
 
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0dk80"]
 texture = ExtResource("2_j3d70")
 0:0/0 = 0
