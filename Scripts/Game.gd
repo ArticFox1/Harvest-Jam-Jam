@@ -9,6 +9,7 @@ const DeadBody: PackedScene = preload("res://Harvest-Jam-Jam/Scenes/LevelEffects
 var Levels := {
 	&"Level1": preload("res://Harvest-Jam-Jam/Scenes/Levels/Level1.tscn") as PackedScene,
 	&"Level2": preload("res://Harvest-Jam-Jam/Scenes/Levels/Level2.tscn") as PackedScene,
+	&"Level3": preload("res://Harvest-Jam-Jam/Scenes/Levels/level3.tscn") as PackedScene,
 	&"LevelEnd": preload("res://Harvest-Jam-Jam/Scenes/Levels/LevelEnd.tscn") as PackedScene,
 }
 
@@ -50,4 +51,4 @@ func SetupLevel(Name: StringName) -> void:
 
 func _ready() -> void:
 	Player.Died.connect(DeathSignal)
-	SetupLevel(&"Level1")
+	SetupLevel(&"Level3")

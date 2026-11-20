@@ -495,7 +495,6 @@ DebugEnabled = false
 [node name="CameraBorder7" parent="CameraControls" unique_id=1045934337 instance=ExtResource("6_hrh58")]
 position = Vector2(1540, -217)
 HalfSize = Vector2(4, 56.68)
-DebugEnabled = false
 
 [node name="Blanket" parent="CameraControls" unique_id=597047199 instance=ExtResource("7_f7m48")]
 position = Vector2(1496, -224)
