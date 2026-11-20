@@ -497,14 +497,14 @@ position = Vector2(1540, -217)
 HalfSize = Vector2(4, 56.68)
 DebugEnabled = false
 
-[node name="AreaFlag" parent="CameraControls" unique_id=597047199 instance=ExtResource("7_f7m48")]
+[node name="Blanket" parent="CameraControls" unique_id=597047199 instance=ExtResource("7_f7m48")]
 position = Vector2(1496, -224)
 scale = Vector2(1.2466621, 2.1411765)
 SubjectPath = NodePath("../CameraBorder7")
 Property = &"Enabled"
 NewValue = false
 
-[node name="AreaFlag2" parent="CameraControls" unique_id=1916093790 instance=ExtResource("7_f7m48")]
+[node name="Checkpoint" parent="CameraControls" unique_id=1916093790 instance=ExtResource("7_f7m48")]
 position = Vector2(1471, -208)
 scale = Vector2(3.757, 6.431)
 SubjectPath = NodePath("../CameraBorder7")
