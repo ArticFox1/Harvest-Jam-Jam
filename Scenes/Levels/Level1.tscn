@@ -465,30 +465,37 @@ NextLevel = &"Level2"
 [node name="CameraBorder" parent="CameraControls" unique_id=780415585 instance=ExtResource("6_hrh58")]
 position = Vector2(99, 84)
 HalfSize = Vector2(512, 4)
+DebugEnabled = false
 
 [node name="CameraBorder2" parent="CameraControls" unique_id=1226303462 instance=ExtResource("6_hrh58")]
 position = Vector2(-148, -35)
 HalfSize = Vector2(4, 145.39)
+DebugEnabled = false
 
 [node name="CameraBorder3" parent="CameraControls" unique_id=53176246 instance=ExtResource("6_hrh58")]
 position = Vector2(-93, -180)
 HalfSize = Vector2(28, 4)
+DebugEnabled = false
 
 [node name="CameraBorder4" parent="CameraControls" unique_id=354136210 instance=ExtResource("6_hrh58")]
 position = Vector2(1668, -247)
 HalfSize = Vector2(4, 143.175)
+DebugEnabled = false
 
 [node name="CameraBorder5" parent="CameraControls" unique_id=1988999317 instance=ExtResource("6_hrh58")]
 position = Vector2(1535, -388)
 HalfSize = Vector2(173.1, 4)
+DebugEnabled = false
 
 [node name="CameraBorder6" parent="CameraControls" unique_id=526019535 instance=ExtResource("6_hrh58")]
 position = Vector2(640, -292)
 HalfSize = Vector2(672, 4)
+DebugEnabled = false
 
 [node name="CameraBorder7" parent="CameraControls" unique_id=1045934337 instance=ExtResource("6_hrh58")]
 position = Vector2(1540, -217)
 HalfSize = Vector2(4, 56.68)
+DebugEnabled = false
 
 [node name="AreaFlag" parent="CameraControls" unique_id=597047199 instance=ExtResource("7_f7m48")]
 position = Vector2(1496, -224)
