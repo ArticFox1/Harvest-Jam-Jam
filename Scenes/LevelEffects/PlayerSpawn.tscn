@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d4kh61stk1ykb"]
+
+[ext_resource type="Script" uid="uid://dml5abocmjpdt" path="res://Harvest-Jam-Jam/Scripts/PlayerSpawnDeletion.gd" id="1_qepep"]
+[ext_resource type="SpriteFrames" uid="uid://c87itghqoyelc" path="res://Harvest-Jam-Jam/Assets/PlayerAnimations.tres" id="2_kuey6"]
+
+[node name="PlayerSpawn" type="Node2D" unique_id=837734868]
+modulate = Color(1, 1, 1, 0.39215687)
+script = ExtResource("1_qepep")
+
+[node name="Animator" type="AnimatedSprite2D" parent="." unique_id=2123939909]
+sprite_frames = ExtResource("2_kuey6")
+animation = &"Dead"

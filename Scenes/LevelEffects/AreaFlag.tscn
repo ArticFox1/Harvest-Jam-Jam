@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dnpu8yfu16aox"]
+
+[ext_resource type="Script" uid="uid://bx2aj68w8fkkt" path="res://Harvest-Jam-Jam/Scripts/AreaFlagConnection.gd" id="1_qdk0n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
+
+[node name="AreaFlag" type="Node2D" unique_id=597047199]
+script = ExtResource("1_qdk0n")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1456577784]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=921012419]
+shape = SubResource("RectangleShape2D_142tq")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

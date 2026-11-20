@@ -1,12 +1,11 @@
 [gd_scene format=3 uid="uid://dpeyqmmx23d8"]
 
-[ext_resource type="Script" uid="uid://uba3ddh5dg8i" path="res://Harvest-Jam-Jam/Scripts/LevelConnection.gd" id="1_q3mn8"]
-
+[ext_resource type="Script" uid="uid://uba3ddh5dg8i" path="res://Harvest-Jam-Jam/Scripts/LevelExitConnection.gd" id="1_1nvo4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
 
-[node name="Level End" type="Node2D" unique_id=924171489]
-script = ExtResource("1_q3mn8")
+[node name="LevelExit" type="Node2D" unique_id=924171489]
+script = ExtResource("1_1nvo4")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1356873960]
 

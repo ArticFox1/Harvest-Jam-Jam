@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b6wmnima880wq"]
+
+[ext_resource type="Script" uid="uid://0am6y78cmliq" path="res://Harvest-Jam-Jam/Scripts/CameraBorderDebug.gd" id="1_mf0ap"]
+
+[node name="CameraBorder" type="Node2D" unique_id=780415585]
+script = ExtResource("1_mf0ap")

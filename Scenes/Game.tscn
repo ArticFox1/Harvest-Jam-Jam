@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://doa2qr2217kab" path="res://Harvest-Jam-Jam/Scenes/Level.tscn" id="2_e3n2n"]
 [ext_resource type="Script" uid="uid://w57vkj7bdd7v" path="res://Harvest-Jam-Jam/Scripts/CameraScript.gd" id="4_c34yj"]
 [ext_resource type="Texture2D" uid="uid://dyppwlaublo75" path="res://Harvest-Jam-Jam/Assets/TitleScreen.png" id="5_keihp"]
-[ext_resource type="Script" uid="uid://cqd3pi1cayc1c" path="res://Harvest-Jam-Jam/Scripts/Credits hide.gd" id="6_p6tnp"]
+[ext_resource type="Script" uid="uid://cqd3pi1cayc1c" path="res://Harvest-Jam-Jam/Scripts/CreditsHide.gd" id="6_p6tnp"]
 
 [node name="Game" type="Node2D" unique_id=141473979]
 script = ExtResource("1_6fjee")

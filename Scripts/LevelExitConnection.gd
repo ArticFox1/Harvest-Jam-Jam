@@ -4,6 +4,9 @@ extends Node2D
 
 signal EndReached
 
+func _ready() -> void:
+	add_to_group(&"LevelExits")
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if not body.name == &"PlayerCharacter":
 		return
