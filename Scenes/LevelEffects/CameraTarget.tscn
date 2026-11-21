@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://iwgyexov23p"]
+
+[ext_resource type="Script" uid="uid://cyjbpo8js0y2h" path="res://Harvest-Jam-Jam/Scripts/CameraTargetFollow.gd" id="1_brtlm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
+
+[node name="CameraTarget" type="Node2D" unique_id=1910514611]
+script = ExtResource("1_brtlm")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=161007093]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1168127314]
+shape = SubResource("RectangleShape2D_142tq")

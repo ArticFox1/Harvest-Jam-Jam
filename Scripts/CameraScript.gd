@@ -20,8 +20,22 @@ func ClampPosition(In: Vector2) -> Vector2:
 				Res.y += absf(Dist) * signf(MoveTo.y)
 	return Res
 
+func FocusTargets(In: Vector2) -> Vector2:
+	var Res: Vector2 = In
+	var ForRes: Array[Vector2] = []
+	for i in get_tree().get_nodes_in_group("CameraTargets"):
+		if not i.Enabled or i.TargetFocus == 0:
+			continue
+		ForRes.append(Res.lerp(i.global_position,i.TargetFocus))
+	Res = ForRes.reduce(func Sum(accum): return accum)
+	if ForRes.is_empty():
+		return In
+	Res /= ForRes.size()
+	return Res
+
 func _process(dt: float) -> void:
 	var Target: Vector2 = Player.global_position
+	#Target = FocusTargets(Target)
 	Target = ClampPosition(Target)
 	
 	global_position = lerp(global_position, Target, 1-exp(-8*dt))

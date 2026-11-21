@@ -456,22 +456,24 @@ position = Vector2(-77, -391.00003)
 scale = Vector2(1.18, 2.335)
 NextLevel = &"Level3"
 
-[node name="CameraBorder" parent="." unique_id=780415585 instance=ExtResource("6_dolm4")]
+[node name="Camera Controls" type="Node2D" parent="." unique_id=381590437]
+
+[node name="CameraBorder" parent="Camera Controls" unique_id=780415585 instance=ExtResource("6_dolm4")]
 position = Vector2(-192, -54)
 HalfSize = Vector2(32, 700)
 DebugEnabled = false
 
-[node name="CameraBorder2" parent="." unique_id=1999363324 instance=ExtResource("6_dolm4")]
+[node name="CameraBorder2" parent="Camera Controls" unique_id=1999363324 instance=ExtResource("6_dolm4")]
 position = Vector2(164, -72)
 HalfSize = Vector2(4, 104)
 DebugEnabled = false
 
-[node name="CameraBorder3" parent="." unique_id=1309256669 instance=ExtResource("6_dolm4")]
+[node name="CameraBorder3" parent="Camera Controls" unique_id=1309256669 instance=ExtResource("6_dolm4")]
 position = Vector2(0, 68)
 HalfSize = Vector2(160, 4)
 DebugEnabled = false
 
-[node name="CameraBorder4" parent="." unique_id=349133251 instance=ExtResource("6_dolm4")]
+[node name="CameraBorder4" parent="Camera Controls" unique_id=349133251 instance=ExtResource("6_dolm4")]
 position = Vector2(372, -381)
 HalfSize = Vector2(4, 173.61)
 DebugEnabled = false

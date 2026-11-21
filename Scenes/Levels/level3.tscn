@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://bng27bapvx87j" path="res://Harvest-Jam-Jam/Assets/GameTileSet.tres" id="1_2q6p4"]
 [ext_resource type="PackedScene" uid="uid://d4kh61stk1ykb" path="res://Harvest-Jam-Jam/Scenes/LevelEffects/PlayerSpawn.tscn" id="2_ffnvn"]
+[ext_resource type="PackedScene" uid="uid://iwgyexov23p" path="res://Harvest-Jam-Jam/Scenes/LevelEffects/CameraTarget.tscn" id="4_mi6qw"]
 [ext_resource type="PackedScene" uid="uid://b6wmnima880wq" path="res://Harvest-Jam-Jam/Scenes/LevelEffects/CameraBorder.tscn" id="4_olvey"]
 
 [node name="Level3" type="Node2D" unique_id=1217245186]
@@ -41,3 +42,7 @@ HalfSize = Vector2(336, 4)
 [node name="CameraBorder5" parent="Camera Controls" unique_id=205426970 instance=ExtResource("4_olvey")]
 position = Vector2(576, -228)
 HalfSize = Vector2(336, 4)
+
+[node name="CameraTarget" parent="Camera Controls" unique_id=1910514611 instance=ExtResource("4_mi6qw")]
+position = Vector2(521, -80)
+scale = Vector2(8.7, 9.6)
