@@ -454,7 +454,7 @@ tile_set = SubResource("TileSet_2nfa4")
 [node name="LevelExit" parent="." unique_id=924171489 instance=ExtResource("5_fh8j0")]
 position = Vector2(-77, -391.00003)
 scale = Vector2(1.18, 2.335)
-NextLevel = &"LevelEnd"
+NextLevel = &"Level3"
 
 [node name="CameraBorder" parent="." unique_id=780415585 instance=ExtResource("6_dolm4")]
 position = Vector2(-192, -54)
