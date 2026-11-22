@@ -32,7 +32,6 @@ func FocusTargets(In: Vector2) -> Vector2:
 		Dem += 1
 	if Dem == 0:
 		return In
-	print("Num: ",Num,"\nDem: ",Dem,"\nLocalRes: ",(Num/Dem),"\nRes: ",((Num/Dem) + In))
 	return ((Num/Dem) + In)
 
 func _process(dt: float) -> void:
