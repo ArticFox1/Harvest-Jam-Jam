@@ -21,21 +21,23 @@ func ClampPosition(In: Vector2) -> Vector2:
 	return Res
 
 func FocusTargets(In: Vector2) -> Vector2:
-	var Res: Vector2 = In
-	var ForRes: Array[Vector2] = []
+	var Num: Vector2 = Vector2.ZERO
+	var Dem: float = 0
 	for i in get_tree().get_nodes_in_group("CameraTargets"):
 		if not i.Enabled or i.TargetFocus == 0:
 			continue
-		ForRes.append(Res.lerp(i.global_position,i.TargetFocus))
-	Res = ForRes.reduce(func Sum(accum): return accum)
-	if ForRes.is_empty():
+		if not i.Collider.get_overlapping_bodies().has(Player):
+			continue
+		Num += (i.global_position - In) * i.Weight
+		Dem += 1
+	if Dem == 0:
 		return In
-	Res /= ForRes.size()
-	return Res
+	print("Num: ",Num,"\nDem: ",Dem,"\nLocalRes: ",(Num/Dem),"\nRes: ",((Num/Dem) + In))
+	return ((Num/Dem) + In)
 
 func _process(dt: float) -> void:
 	var Target: Vector2 = Player.global_position
-	#Target = FocusTargets(Target)
+	Target = FocusTargets(Target)
 	Target = ClampPosition(Target)
 	
 	global_position = lerp(global_position, Target, 1-exp(-8*dt))

@@ -4,8 +4,8 @@ extends Node2D
 @export_range(0,100,1,"prefer_slider","suffix:%") var TargetFocus: float = 25:
 	set(v):
 		TargetFocus = v
-		FocusPercent = v * 0.0
-var FocusPercent: float = .25
+		Weight = v * 0.01
+var Weight: float = .25
 @onready var Collider: Area2D = $Area2D
 
 func _ready() -> void:

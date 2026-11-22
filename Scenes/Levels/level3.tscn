@@ -26,23 +26,29 @@ position = Vector2(8, -3)
 [node name="CameraBorder" parent="Camera Controls" unique_id=780415585 instance=ExtResource("4_olvey")]
 position = Vector2(-82, -98)
 HalfSize = Vector2(2, 200)
+DebugEnabled = false
 
 [node name="CameraBorder2" parent="Camera Controls" unique_id=910094343 instance=ExtResource("4_olvey")]
 position = Vector2(1236, -101)
 HalfSize = Vector2(4, 200)
+DebugEnabled = false
 
 [node name="CameraBorder3" parent="Camera Controls" unique_id=1606097801 instance=ExtResource("4_olvey")]
 position = Vector2(580, 82)
 HalfSize = Vector2(670, 2)
+DebugEnabled = false
 
 [node name="CameraBorder4" parent="Camera Controls" unique_id=1377239430 instance=ExtResource("4_olvey")]
 position = Vector2(576, 20)
 HalfSize = Vector2(336, 4)
+DebugEnabled = false
 
 [node name="CameraBorder5" parent="Camera Controls" unique_id=205426970 instance=ExtResource("4_olvey")]
 position = Vector2(576, -228)
 HalfSize = Vector2(336, 4)
+DebugEnabled = false
 
 [node name="CameraTarget" parent="Camera Controls" unique_id=1910514611 instance=ExtResource("4_mi6qw")]
 position = Vector2(521, -80)
 scale = Vector2(8.7, 9.6)
+TargetFocus = 65.0
