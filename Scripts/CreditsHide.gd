@@ -1,6 +1,7 @@
 extends TextureRect
 
 func _ready() -> void:
+	visible = true
 	await get_tree().create_timer(0.5).timeout
 	var Fade = get_tree().create_tween()
 	Fade.tween_property(self,"modulate",Color("00000000"),0.5)
