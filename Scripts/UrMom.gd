@@ -10,8 +10,10 @@ extends CharacterBody2D
 @onready var Background = $Background
 
 const Speed: float = 90
-const GroundedAccleration: float = 1000
-const GroundedExceedAcceleration: float = 600
+const GroundedAcceleration: float = 1000
+const GroundedExceedAcceleration: float = 400
+const AirAcceleration: float = 650
+const AirExceedAcceleration: float = 260
 
 const JumpHeight: float = 12
 const HalfGravityThreshold: float = 40
@@ -110,14 +112,20 @@ func _physics_process(dt: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("MoveLeft", "MoveRight")
-	var Acceleration = GroundedAccleration
-	if absf(velocity.x) > Speed:
-		Acceleration = GroundedExceedAcceleration
+	var Acceleration = GroundedAcceleration
+	if is_on_floor():
+		if absf(velocity.x) > Speed:
+			Acceleration = GroundedExceedAcceleration
+	else:
+		Acceleration = AirAcceleration
+		if absf(velocity.x) > Speed:
+			Acceleration = AirExceedAcceleration
+	
 	if direction:
 		velocity.x = move_toward(velocity.x, direction * Speed, Acceleration * dt)
 	else:
 		velocity.x = move_toward(velocity.x, 0, Acceleration * dt)
-
+	
 	move_and_slide()
 	
 	if velocity.y < 0:

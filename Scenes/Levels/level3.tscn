@@ -34,9 +34,8 @@ HalfSize = Vector2(4, 200)
 DebugEnabled = false
 
 [node name="CameraBorder3" parent="Camera Controls" unique_id=1606097801 instance=ExtResource("4_olvey")]
-position = Vector2(580, 82)
+position = Vector2(580, 50)
 HalfSize = Vector2(670, 2)
-DebugEnabled = false
 
 [node name="CameraBorder4" parent="Camera Controls" unique_id=1377239430 instance=ExtResource("4_olvey")]
 position = Vector2(576, 20)
