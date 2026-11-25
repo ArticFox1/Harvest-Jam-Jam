@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bx2aj68w8fkkt" path="res://Harvest-Jam-Jam/Scripts/AreaFlagConnection.gd" id="1_qdk0n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
+size = Vector2(16, 16)
 
 [node name="AreaFlag" type="Node2D" unique_id=597047199]
 script = ExtResource("1_qdk0n")

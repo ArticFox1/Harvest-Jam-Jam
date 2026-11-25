@@ -3,7 +3,8 @@ extends Node2D
 @export_node_path() var SubjectPath: NodePath:
 	set(v):
 		SubjectPath = v
-		Subject = get_node(SubjectPath)
+		if has_node(SubjectPath):
+			Subject = get_node(SubjectPath)
 var Subject: Node
 @export var Property: StringName = &""
 @export var NewValue: Variant

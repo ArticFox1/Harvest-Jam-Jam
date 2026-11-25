@@ -31,6 +31,7 @@ var SaveJumpVelocity: float = 0
 var RespawnPoint: Vector2 = Vector2.ZERO
 
 signal Died
+signal Restart
 
 func _ready() -> void:
 	WalkSound.finished.connect(WalkSoundFinished)
@@ -69,6 +70,9 @@ func BackgroundSoundFinished() -> void:
 	Background.play()
 
 func _physics_process(dt: float) -> void:
+	
+	if Input.is_action_just_pressed("RestartLevel"):
+		Restart.emit()
 	
 	if Input.is_action_just_pressed("SelfDestruct"):
 		Die()

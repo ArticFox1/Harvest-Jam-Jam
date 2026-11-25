@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://dd16o0p5d5m3y"]
+
+[ext_resource type="Texture2D" uid="uid://dd75flswisaqc" path="res://Harvest-Jam-Jam/Assets/Animations/CheckpointFlag/CheckpointFlag_0002.png" id="1_alda3"]
+[ext_resource type="Texture2D" uid="uid://b7e6707sxgpk6" path="res://Harvest-Jam-Jam/Assets/Animations/CheckpointFlag/CheckpointFlag_0003.png" id="2_o6y3y"]
+[ext_resource type="Texture2D" uid="uid://71uxsf2ofrhy" path="res://Harvest-Jam-Jam/Assets/Animations/CheckpointFlag/CheckpointFlag_0004.png" id="3_jmqof"]
+[ext_resource type="Texture2D" uid="uid://c0nsqor25gai8" path="res://Harvest-Jam-Jam/Assets/Animations/CheckpointFlag/CheckpointFlag_0005.png" id="4_eg5x5"]
+[ext_resource type="Texture2D" uid="uid://dd4moo4olvsti" path="res://Harvest-Jam-Jam/Assets/Animations/CheckpointFlag/CheckpointFlag_0006.png" id="5_rra10"]
+[ext_resource type="Texture2D" uid="uid://bvpkvmpee6103" path="res://Harvest-Jam-Jam/Assets/Animations/CheckpointFlag/CheckpointFlag_0007.png" id="6_v0x61"]
+[ext_resource type="Texture2D" uid="uid://bgt61ess8f1ww" path="res://Harvest-Jam-Jam/Assets/Animations/CheckpointFlag/CheckpointFlag_0001.png" id="7_wuhs4"]
+[ext_resource type="Script" uid="uid://wxvk73der5ct" path="res://Harvest-Jam-Jam/Scripts/CheckpointRespawn.gd" id="8_kuc86"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_142tq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_alda3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_o6y3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jmqof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_eg5x5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rra10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_v0x61")
+}],
+"loop": 0,
+"name": &"Braking",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_v0x61")
+}],
+"loop": 0,
+"name": &"Broken",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_wuhs4")
+}],
+"loop": 0,
+"name": &"Unbroken",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b8hiy"]
+size = Vector2(16, 16)
+
+[node name="Checkpoint" type="AnimatedSprite2D" unique_id=161412802]
+sprite_frames = SubResource("SpriteFrames_142tq")
+animation = &"Unbroken"
+script = ExtResource("8_kuc86")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1864145598]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=266472720]
+shape = SubResource("RectangleShape2D_b8hiy")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
