@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://iwgyexov23p" path="res://Harvest-Jam-Jam/Scenes/LevelEffects/CameraTarget.tscn" id="4_mi6qw"]
 [ext_resource type="PackedScene" uid="uid://b6wmnima880wq" path="res://Harvest-Jam-Jam/Scenes/LevelEffects/CameraBorder.tscn" id="4_olvey"]
 [ext_resource type="PackedScene" uid="uid://dpeyqmmx23d8" path="res://Harvest-Jam-Jam/Scenes/LevelEffects/LevelExit.tscn" id="5_olvey"]
-[ext_resource type="PackedScene" uid="uid://dnpu8yfu16aox" path="res://Harvest-Jam-Jam/Scenes/LevelEffects/AreaFlag.tscn" id="6_37sqw"]
+[ext_resource type="PackedScene" uid="uid://dd16o0p5d5m3y" path="res://Harvest-Jam-Jam/Scenes/LevelEffects/Checkpoint.tscn" id="6_4ye4h"]
 
 [node name="Level3" type="Node2D" unique_id=1217245186]
 
@@ -60,9 +60,5 @@ position = Vector2(1150, -83)
 scale = Vector2(1.28, 2)
 NextLevel = &"LevelEnd"
 
-[node name="AreaFlag" parent="." unique_id=597047199 instance=ExtResource("6_37sqw")]
-position = Vector2(491, -54)
-scale = Vector2(1, 2)
-SubjectPath = NodePath("../../../Player/PlayerCharacter")
-Property = &"RespawnPoint"
-NewValue = Vector2(491, -57)
+[node name="Checkpoint" parent="." unique_id=161412802 instance=ExtResource("6_4ye4h")]
+position = Vector2(496, -40)
