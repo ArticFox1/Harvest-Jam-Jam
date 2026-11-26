@@ -485,9 +485,9 @@ HalfSize = Vector2(4, 173.61)
 DebugEnabled = false
 
 [node name="CameraTarget" parent="Camera Controls" unique_id=1910514611 instance=ExtResource("8_x3s6i")]
-position = Vector2(6, -424)
-scale = Vector2(15.401439, 7.204654)
-TargetFocus = 80.0
+position = Vector2(0, -445)
+scale = Vector2(11, 11)
+TargetFocus = 90.0
 
 [node name="CameraBorder5" parent="Camera Controls" unique_id=1940821450 instance=ExtResource("6_dolm4")]
 position = Vector2(152, -596)
@@ -495,7 +495,7 @@ HalfSize = Vector2(269.73, 4)
 DebugEnabled = false
 
 [node name="PlayerSpawn" parent="." unique_id=837734868 instance=ExtResource("4_fa77j")]
-position = Vector2(-73, -1)
+position = Vector2(-73, -4)
 
 [node name="Checkpoint" parent="." unique_id=161412802 instance=ExtResource("7_pu1ku")]
 position = Vector2(104, -232)

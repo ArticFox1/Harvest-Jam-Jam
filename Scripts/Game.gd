@@ -11,6 +11,7 @@ var Levels := {
 	&"Level2": preload("res://Harvest-Jam-Jam/Scenes/Levels/Level2.tscn") as PackedScene,
 	&"Level3": preload("res://Harvest-Jam-Jam/Scenes/Levels/Level3.tscn") as PackedScene,
 	&"Level4": preload("res://Harvest-Jam-Jam/Scenes/Levels/Level4.tscn") as PackedScene,
+	&"Level5": preload("res://Harvest-Jam-Jam/Scenes/Levels/Level_5.tscn") as PackedScene,
 	&"LevelEnd": preload("res://Harvest-Jam-Jam/Scenes/Levels/LevelEnd.tscn") as PackedScene,
 }
 
@@ -72,4 +73,4 @@ func SetupLevel(Name: StringName) -> void:
 func _ready() -> void:
 	Player.Died.connect(DeathSignal)
 	Player.Restart.connect(RestartSignal)
-	SetupLevel(&"Level4")
+	SetupLevel(&"Level3")

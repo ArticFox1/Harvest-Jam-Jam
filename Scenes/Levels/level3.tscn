@@ -56,9 +56,9 @@ scale = Vector2(8.7, 9.6)
 TargetFocus = 65.0
 
 [node name="LevelExit" parent="." unique_id=924171489 instance=ExtResource("5_olvey")]
-position = Vector2(1150, -83)
+position = Vector2(1153, -83)
 scale = Vector2(1.28, 2)
-NextLevel = &"LevelEnd"
+NextLevel = &"Level5"
 
 [node name="Checkpoint" parent="." unique_id=161412802 instance=ExtResource("6_4ye4h")]
 position = Vector2(496, -40)
