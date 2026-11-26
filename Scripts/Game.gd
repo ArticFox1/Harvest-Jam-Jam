@@ -72,4 +72,4 @@ func SetupLevel(Name: StringName) -> void:
 func _ready() -> void:
 	Player.Died.connect(DeathSignal)
 	Player.Restart.connect(RestartSignal)
-	SetupLevel(&"Level1")
+	SetupLevel(&"Level4")
