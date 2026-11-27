@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://87qyrg0bn6i3"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
+
 [node name="Node2D" type="Node2D" unique_id=2026191173]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1348774816]
+collision_layer = 6
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1166867168]
+shape = SubResource("RectangleShape2D_142tq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1027719289]

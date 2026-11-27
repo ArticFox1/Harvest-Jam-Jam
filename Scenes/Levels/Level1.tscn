@@ -431,7 +431,8 @@ texture = ExtResource("3_ourj8")
 3:4/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_2nifc"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 5
+physics_layer_0/collision_mask = 5
 physics_layer_1/collision_layer = 2
 physics_layer_1/collision_mask = 2
 terrain_set_0/mode = 0
