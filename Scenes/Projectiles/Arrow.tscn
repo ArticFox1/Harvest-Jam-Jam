@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://87qyrg0bn6i3"]
 
+[ext_resource type="Texture2D" uid="uid://chydp2333e40s" path="res://Harvest-Jam-Jam/Assets/Arrow.png" id="1_f5iwg"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_142tq"]
+size = Vector2(12, 6)
 
 [node name="Node2D" type="Node2D" unique_id=2026191173]
 
@@ -9,6 +12,8 @@ collision_layer = 6
 collision_mask = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1166867168]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_142tq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1027719289]
+texture = ExtResource("1_f5iwg")
